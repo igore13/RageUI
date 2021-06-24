@@ -411,7 +411,6 @@ function RageUI.Render()
             if CurrentMenu.Parent ~= nil then
                 if CurrentMenu.Parent() then
                     RageUI.NextMenu = CurrentMenu.Parent
-                    CurrentMenu:UpdateCursorStyle()
                 else
                     RageUI.NextMenu = nil
                     RageUI.Visible(CurrentMenu, false)
